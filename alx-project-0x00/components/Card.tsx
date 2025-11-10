@@ -1,6 +1,4 @@
 import Image from "next/image";
-import HOUSE_IMAGE from "@/public/assets/house.png";
-import STAR_IMAGE from "@/public/assets/star.png";
 import React from "react";
 import Pill from "./Pill";
 
@@ -9,7 +7,7 @@ const Card: React.FC = () => {
     <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg ">
       <Image
         className="rounded-lg"
-        src={HOUSE_IMAGE}
+        src="/assets/house.png"
         width={378.56}
         height={299.37}
         alt="house image"
@@ -29,7 +27,14 @@ const Card: React.FC = () => {
           </p>
         </div>
         <div className="flex items-center">
-          <Image src={STAR_IMAGE} alt="star" />
+          <div className="relative w-6 h-6">
+            <Image
+              src="/assets/star.png"
+              alt="Star"
+              fill
+              className="object-contain" /* keeps aspect ratio */
+            />
+          </div>
           <p className=" font-medium text=[17px] ml-2">4.76</p>
         </div>
       </div>
