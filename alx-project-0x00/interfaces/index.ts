@@ -3,7 +3,7 @@ export interface PillProps {
 }
 
 export interface ButtonProps {
-  title: string;
+  styles: string;
   size: "small" | "medium" | "large"; // Button sizes
-  styles: "rounded-sm" | "rounded-md" | "rounded-lg"; // Button styles
+  shape: "rounded-sm" | "rounded-md" | "rounded-lg"; // Button styles
 }
