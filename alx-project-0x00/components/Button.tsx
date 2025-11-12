@@ -6,12 +6,14 @@ const Button: React.FC<ButtonProps> = ({ styles, size, shape }) => {
     small: "px-4 py-2 text-sm",
     medium: "px-6 py-3 text-base",
     large: "px-8 py-4 text-lg",
+    full: "w-full px-8 py-4 text-lg",
   };
 
   const shapeClasses = {
     "rounded-sm": "rounded-sm",
     "rounded-md": "rounded-md",
-    "rounded-lg": "rounded-full",
+    "rounded-lg": "rounded-lg",
+    "rounded-full": "rounded-full",
   };
 
   return (
