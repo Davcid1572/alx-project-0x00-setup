@@ -1,6 +1,6 @@
 import { ButtonProps } from "@/interfaces"; // Import the ButtonProps interface
 
-const Button: React.FC<ButtonProps> = ({ title, size, style }) => {
+const Button: React.FC<ButtonProps> = ({ title, size, styles }) => {
   // Map the size and style props to corresponding Tailwind CSS classes
   const sizeClasses = {
     small: "px-4 py-2 text-sm",
@@ -11,12 +11,12 @@ const Button: React.FC<ButtonProps> = ({ title, size, style }) => {
   const shapeClasses = {
     "rounded-sm": "rounded-sm",
     "rounded-md": "rounded-md",
-    "rounded-full": "rounded-full",
+    "rounded-lg": "rounded-full",
   };
 
   return (
     <button
-      className={`${sizeClasses[size]} ${shapeClasses[style]} bg-blue-500 text-white hover:bg-blue-600 focus:outline-none transition duration-300 ease-in-out`}
+      className={`${sizeClasses[size]} ${shapeClasses[styles]} bg-blue-500 text-white hover:bg-blue-600 focus:outline-none transition duration-300 ease-in-out`}
     >
       {title}
     </button>
