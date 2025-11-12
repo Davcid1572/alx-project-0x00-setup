@@ -12,11 +12,11 @@ const Landing: React.FC = () => {
 
       <div className="space-x-4 mt-4">
         {/* Small Button */}
-        <Button title="Small Button" size="small" shape="rounded-sm" />
+        <Button styles="Small Button" size="small" shape="rounded-sm" />
         {/* Medium Button */}
-        <Button title="Medium Button" size="medium" shape="rounded-md" />
+        <Button styles="Medium Button" size="medium" shape="rounded-md" />
         {/* Large Button */}
-        <Button title="Large Button" size="large" shape="rounded-full" />
+        <Button styles="Large Button" size="large" shape="rounded-lg" />
       </div>
     </div>
   );

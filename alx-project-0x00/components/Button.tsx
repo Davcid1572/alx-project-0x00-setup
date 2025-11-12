@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({ styles, size, shape }) => {
     <button
       className={`${sizeClasses[size]} ${shapeClasses[shape]} bg-blue-500 text-white hover:bg-blue-600 focus:outline-none transition duration-300 ease-in-out`}
     >
-      {title}
+      {styles}
     </button>
   );
 };
